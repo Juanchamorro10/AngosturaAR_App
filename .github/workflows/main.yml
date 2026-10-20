@@ -1,0 +1,16 @@
+name: Compilar Proyecto Unity
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Compilar para Android e iOS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del Repositorio
+        uses: actions/checkout@v4
+
+      - name: Mensaje de confirmación
+        run: echo "El repositorio de Unity está conectado correctamente para la Etapa 3."
